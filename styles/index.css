@@ -62,3 +62,8 @@ aside li {
 .topic h2{
   text-align: center;
 }
+
+/* main */
+main{
+  margin: 1rem;
+}
