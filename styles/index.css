@@ -14,8 +14,10 @@ html {
 }
 /* navbar */
 nav {
-  /* position: fixed; */
-  /* background: #1c2845; */
+  background: #0B0F1A;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   display: flex;
@@ -41,10 +43,13 @@ nav a:hover {
 
 /* sidebar */
 aside {
-  /* background: #1c2845; */
+  background: #0B0F1A;
+  position: fixed;
+  z-index: 2;
+  margin-top: 3rem;
   border-right: 1px solid gray;
   color: white;
-  min-width: 200px;
+  min-width: 180px;
   min-height: 100vh;
   padding: 0 0 0 1rem;
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
@@ -73,13 +78,15 @@ aside li {
 
 /* main */
 main {
-  margin: 1.5rem;
-  padding: 1rem;
   color: white;
-  width: 100%;
   background: #111828;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  margin: 4.5rem 13.5rem;
+  padding: 1.5rem;
+  min-width: 81.5%;
   border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 /* footer */
