@@ -10,32 +10,40 @@ html {
   font-family: "prompt", sans-serif;
   margin: 0;
   padding: 0;
+  background: #0B0F1A;
 }
 /* navbar */
-nav{
+nav {
   /* position: fixed; */
-  background: white;
+  /* background: #1c2845; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   display: flex;
   overflow: hidden;
+  border-bottom: 1px solid #00F3FF;
 }
-nav a{
+nav a {
   text-decoration: none;
   /* border: 1px solid black; */
   padding: 0.3rem 0.5rem;
   /* margin-left: 0.3rem; */
-  color: blue;
+  color: #00F3FF;
 }
-nav a:hover{
+nav a:hover {
   transition: 0.2s ease;
-  color: rgb(171, 19, 19);
+  color: red;
 }
 
+/* head */
+.head{
+  color: #00F3FF;
+}
 
 /* sidebar */
 aside {
-  background: gray;
+  /* background: #1c2845; */
+  border-right: 1px solid gray;
+  color: white;
   min-width: 200px;
   min-height: 100vh;
   padding: 0 0 0 1rem;
@@ -59,11 +67,25 @@ aside li {
 .topic {
   padding-right: 1rem;
 }
-.topic h2{
+.topic h2 {
   text-align: center;
 }
 
 /* main */
-main{
-  margin: 1rem;
+main {
+  margin: 1.5rem;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  background: #111828;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: white;
 }
