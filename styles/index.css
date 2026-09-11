@@ -10,48 +10,54 @@ html {
   font-family: "prompt", sans-serif;
   margin: 0;
   padding: 0;
-  background: #0B0F1A;
+  background: #090C15;
 }
+
 /* navbar */
 nav {
-  background: #0B0F1A;
+  display: flex;
+  background: #161f357a;
   position: fixed;
   z-index: 3;
-  width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  display: flex;
   overflow: hidden;
-  border-bottom: 1px solid #00F3FF;
+  width: 100%;
+  box-sizing: border-box;
+  /* border-bottom: 1px solid rgba(189, 189, 189, 0.263); */
 }
 nav a {
   text-decoration: none;
   /* border: 1px solid black; */
   padding: 0.3rem 0.5rem;
   /* margin-left: 0.3rem; */
-  color: #00F3FF;
+  color: rgb(155, 155, 155);
 }
 nav a:hover {
-  transition: 0.2s ease;
+  transition: 0.3s ease;
+  color: white;
+}
+nav a.active{
   color: red;
 }
 
 /* head */
-.head{
-  color: #00F3FF;
+.head {
+  color: white;
+  font-size: 14pt;
 }
 
 /* sidebar */
 aside {
-  background: #0B0F1A;
+  background: #1e293b47;
   position: fixed;
   z-index: 2;
   margin-top: 3rem;
-  border-right: 1px solid gray;
   color: white;
-  min-width: 180px;
+  min-width: 200px;
   min-height: 100vh;
   padding: 0 0 0 1rem;
+  /* border-right: 1px solid rgba(189, 189, 189, 0.263); */
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
 aside ul {
@@ -79,18 +85,18 @@ aside li {
 /* main */
 main {
   color: white;
-  background: #111828;
+  background: #1E293B;
   position: fixed;
-  margin: 4.5rem 13.5rem;
+  margin: 4.5rem 14.5rem;
   padding: 1.5rem;
-  min-width: 81.5%;
+  width: calc(100% - 15.5rem); /* 14.5rem x 2 ฝั่ง = 29rem */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-
+  box-sizing: border-box;
 }
 
 /* footer */
-footer{
+footer {
   text-align: center;
   padding: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
