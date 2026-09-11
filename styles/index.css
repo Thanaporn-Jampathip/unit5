@@ -38,7 +38,7 @@ nav a:hover {
   color: white;
 }
 nav a.active{
-  color: red;
+  color: white;
 }
 
 /* head */
@@ -84,11 +84,11 @@ aside li {
 
 /* main */
 main {
-  color: white;
+  color: rgba(255, 255, 255, 0.81);
   background: #1E293B;
   position: fixed;
   margin: 4.5rem 14.5rem;
-  padding: 1.5rem;
+  padding-left: 1.5rem;
   width: calc(100% - 15.5rem); /* 14.5rem x 2 ฝั่ง = 29rem */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
