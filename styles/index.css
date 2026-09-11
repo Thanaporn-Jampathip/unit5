@@ -38,7 +38,7 @@ nav a:hover {
   color: white;
 }
 nav a.active{
-  color: white;
+  color: #00F0FF;
 }
 
 /* head */
@@ -93,6 +93,9 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+}
+main p {
+  font-size: 13pt;
 }
 
 /* footer */
