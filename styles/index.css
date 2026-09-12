@@ -107,10 +107,10 @@ main {
   box-sizing: border-box;
   /* flex: 1; */
 }
-main h2{
+main h2 {
   color: rgb(255, 63, 63);
 }
-main h3{
+main h3 {
   color: rgba(0, 183, 0, 0.812);
 }
 main p {
@@ -120,14 +120,29 @@ main ol,
 ul {
   font-size: 13pt;
 }
+
+/* main about table */
+main .table {
+  width: 100%;
+  border-radius: 15px;
+  background: #07112265;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.364);
+}
 main table {
   width: 100%;
-  border: 1px solid black;
+}
+main thead {
 }
 main table tr,
 th,
 td {
-  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+}
+main th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.364);
+  font-size: 13pt;
 }
 
 /* footer */
