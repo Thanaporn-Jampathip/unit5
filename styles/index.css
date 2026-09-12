@@ -10,11 +10,11 @@ html {
   font-family: "prompt", sans-serif;
   margin: 0;
   padding: 0;
-  background: #090C15;
+  background: #090c15;
   caret-color: transparent;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -23,7 +23,7 @@ body{
 /* navbar */
 nav {
   display: flex;
-  background: #161f357a;
+  background: #161f35;
   position: fixed;
   z-index: 3;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -44,8 +44,8 @@ nav a:hover {
   transition: 0.3s ease;
   color: white;
 }
-nav a.active{
-  color: #00F0FF;
+nav a.active {
+  color: #00f0ff;
 }
 
 /* head */
@@ -92,7 +92,7 @@ aside li {
 /* main */
 main {
   color: rgba(255, 255, 255, 0.81);
-  background: #1E293B;
+  background: #1e293b;
   margin: 4.5rem 14.5rem;
   padding: 0.5rem 1.5rem;
   width: calc(100% - 15.5rem); /* 14.5rem x 2 ฝั่ง = 29rem */
@@ -104,8 +104,17 @@ main {
 main p {
   font-size: 13pt;
 }
-main ol{
+main ol {
   font-size: 13pt;
+}
+main table {
+  width: 100%;
+  border: 1px solid black;
+}
+main table tr,
+th,
+td {
+  border: 1px solid black;
 }
 
 /* footer */

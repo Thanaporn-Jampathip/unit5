@@ -10,14 +10,12 @@
     <!-- nav -->
     <nav>
       <!-- head -->
-      <div class="head">
-        บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน
-      </div>
+      <div class="head">บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน</div>
       <!-- menu -->
       <div style="margin-left: auto">
         <a href="home.html">หน้าหลัก</a>
         <a href="content_1.html" class="active">ระบบปฏิบัติการ</a>
-        <a href="content_2.html">	การบู๊ตและ CPU</a>
+        <a href="content_2.html"> การบู๊ตและ CPU</a>
         <a href="content_3.html">หน่วยความจำ</a>
         <a href="content_4.html">การจัดการไฟล์</a>
         <a href="content_5.html">ความปลอดภัย</a>
@@ -38,15 +36,27 @@
         <h2>ระบบปฏิบัติการ (Operating System) คืออะไร</h2>
         <p>
           ซอฟต์แวร์ที่จัดการและควบคุมโปรแกรมประยุกต์และติดต่อ
-          ประสานงานกับอุปกรณ์ ทําให้คอมพิวเตอร์สามารถปฏิบัติงานตามที่ผู้ใช้ต้องการ ช่วยให้ผู้ใช้เป็นอิสระจากรายละเอียดของฮาร์ดแวร์ คําว่า Platform ใช้อ้างอิงถึงฮาร์ดแวร์ + OS + สภาพแวดล้อม
+          ประสานงานกับอุปกรณ์
+          ทําให้คอมพิวเตอร์สามารถปฏิบัติงานตามที่ผู้ใช้ต้องการ
+          ช่วยให้ผู้ใช้เป็นอิสระจากรายละเอียดของฮาร์ดแวร์ คําว่า Platform
+          ใช้อ้างอิงถึงฮาร์ดแวร์ + OS + สภาพแวดล้อม
         </p>
 
         <h2>โครงสร้างระบบปฏิบัติการ</h2>
         <ol>
-          <li>โปรแกรมควบคุมอุปกรณ์: BIOS / Firmware / Device Driver / HAL (Hardware Abstraction Layer)</li>
-          <li>ตัวแกนของระบบปฏิบัติqการ (OS Kernel): จัดการหน่วยความจำ หน่วยประมวลผล</li>
+          <li>
+            โปรแกรมควบคุมอุปกรณ์: BIOS / Firmware / Device Driver / HAL
+            (Hardware Abstraction Layer)
+          </li>
+          <li>
+            ตัวแกนของระบบปฏิบัติqการ (OS Kernel): จัดการหน่วยความจำ
+            หน่วยประมวลผล
+          </li>
           <li>ระบบไฟล์และความปลอดภัย</li>
-          <li>User Interface หรือ Shell: Command Line หรือ Graphic User Interface (GUI)</li>
+          <li>
+            User Interface หรือ Shell: Command Line หรือ Graphic User Interface
+            (GUI)
+          </li>
         </ol>
 
         <h2>โปรแกรมประยุกต์กับการข้ามแพลตฟอร์ม (Cross-Platform)</h2>
@@ -58,7 +68,33 @@
               <th>หมายเหตุ</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td>แยกพัฒนาหลายชุด</td>
+              <td>พัฒนาแยกสำหรับแต่ละระบบปฏิบัติการ</td>
+              <td>เช่น Windows, Mac OS, Android, iOS</td>
+            </tr>
+            <tr>
+              <td>Cross-platform application</td>
+              <td>ชุดเดียวรันได้หลายแพลตฟอร์ม</td>
+              <td>ต้องมี runtime environment ร่วม</td>
+            </tr>
+            <tr>
+              <td>Web-based application</td>
+              <td>รันในเว็บบราวเซอร์มาตรฐาน</td>
+              <td>ช้าและกินทรัพยากรมากที่สุด</td>
+            </tr>
+          </tbody>
         </table>
+
+        <h2>โปรแกรมควบคุมฮาร์ดแวร์ระดับล่าง</h2>
+        <p>
+          BIOS (Basic Input Output System): บรรจุใน ROM ควบคุมอุปกรณ์มาตรฐาน
+          (CPU, RAM, เมนบอร์ด, ฮาร์ดดิสก์) → ทำให้ OS
+          และโปรแกรมอิสระจากรายละเอียดอุปกรณ์ Device Driver:
+          ติดตั้งเพิ่มเติมสำหรับอุปกรณ์ที่ไม่รู้จัก (เครื่องพิมพ์, สแกนเนอร์)
+          Android HAL: ระดับควบคุมฮาร์ดแวร์สำหรับระบบ Android
+        </p>
       </main>
     </div>
 
