@@ -10,14 +10,12 @@
     <!-- nav -->
     <nav>
       <!-- head -->
-      <div class="head">
-        บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน
-      </div>
+      <div class="head">บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน</div>
       <!-- menu -->
       <div style="margin-left: auto">
         <a href="home.html">หน้าหลัก</a>
         <a href="content_1.html">ระบบปฏิบัติการ</a>
-        <a href="content_2.html" class="active">	การบู๊ตและ CPU</a>
+        <a href="content_2.html" class="active"> การบู๊ตและ CPU</a>
         <a href="content_3.html">หน่วยความจำ</a>
         <a href="content_4.html">การจัดการไฟล์</a>
         <a href="content_5.html">ความปลอดภัย</a>
@@ -35,10 +33,14 @@
 
       <!-- body -->
       <main>
-        <h2>● ระบบปฏิบัติการ (Operating System) คืออะไร</h2>
-        <p>
-          
-        </p>
+        <h2>ขั้นตอนการเริ่มต้นระบบ (Boot)</h2>
+        <ol>
+          <li><span style="font-weight: bold;">เริ่มจ่ายไฟ:</span> กดปุ่มเปิด → พาวเวอร์ซัพพลายจ่ายไฟให้ซีพียู</li>
+          <li><span style="font-weight: bold;">ซีพียูเริ่มทำงาน:</span> อ่านโปรแกรม BIOS/Firmware จาก Flash ROM</li>
+          <li><span style="font-weight: bold;">ตรวจสอบอุปกรณ์ (POST):</span> ตรวจสอบความพร้อมเมนบอร์ด RAM ซีพียู อุปกรณ์ต่อพ่วง</li>
+          <li><span style="font-weight: bold;">โหลดระบบปฏิบัติการ:</span> อ่านจาก Flash ROM หรืออุปกรณ์อื่น (ฮาร์ดดิสก์, SSD) เก็บใน RAM</li>
+          <li><span style="font-weight: bold;">Kernel พร้อมใช้งาน:</span> เริ่มทำงาน โหลด Configuration แสดงหน้าจอพร้อมรับคำสั่ง</li>
+        </ol>
       </main>
     </div>
 
