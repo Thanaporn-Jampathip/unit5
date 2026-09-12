@@ -1,5 +1,5 @@
 /* import font from google font */
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 /* font-family: "prompt", sans-serif; */
 
 /* body html */
@@ -10,6 +10,7 @@ html {
   padding: 0;
   background: #090c15;
   caret-color: transparent;
+  cursor: default;
 }
 
 body {
@@ -54,55 +55,63 @@ nav a.active {
 
 /* sidebar */
 aside {
-  background: #1e293b47;
+  background: #071122;
   position: fixed;
-  z-index: 3;
-  margin-top: 3rem;
+  z-index: 2;
   color: white;
-  min-width: 200px;
+  max-width: 250px;
   min-height: 100vh;
-  padding: 0 0 0 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  cursor: default;
   /* border-right: 1px solid rgba(189, 189, 189, 0.263); */
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
 aside ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  /* list-style: none; */
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  color: rgb(160, 160, 160);
 }
 aside li {
-  /* border: 1px solid black; */
-  margin-top: 1rem;
-  padding: 0.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  background: white;
-  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 12pt;
 }
 
-/* topic */
-.topic {
-  padding-right: 1rem;
+/* menu */
+.menu {
+  margin-top: 3.5rem;
 }
-.topic h2 {
+.menu h3 {
   text-align: center;
+  color: #ffffffcb;
+  font-size: 14pt;
 }
 
 /* main */
 main {
   color: rgba(255, 255, 255, 0.81);
   background: #1e293b;
-  margin: 4.5rem 14.5rem;
+  margin-top: 4.5rem;
+  margin-left: 17rem;
+  margin-right: 17rem;
+  margin-bottom: 1rem;
   padding: 0.5rem 1.5rem;
-  width: calc(100% - 15.5rem); /* 14.5rem x 2 ฝั่ง = 29rem */
+  width: calc(100% - 18rem); /* 14.5rem x 2 ฝั่ง = 29rem */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  flex: 1;
+  /* flex: 1; */
 }
 main p {
   font-size: 13pt;
 }
-main ol, ul {
+main ol,
+ul {
   font-size: 13pt;
 }
 main table {
@@ -122,5 +131,8 @@ footer {
   padding: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   color: white;
-  /* background: #161f357a; */
+  background: #1e2b4b66;
+  box-sizing: border-box;
+  font-size: 10pt;
+  border-radius: 10px;
 }
