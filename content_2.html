@@ -35,12 +35,57 @@
       <main>
         <h2>ขั้นตอนการเริ่มต้นระบบ (Boot)</h2>
         <ol>
-          <li><span style="font-weight: bold;">เริ่มจ่ายไฟ:</span> กดปุ่มเปิด → พาวเวอร์ซัพพลายจ่ายไฟให้ซีพียู</li>
-          <li><span style="font-weight: bold;">ซีพียูเริ่มทำงาน:</span> อ่านโปรแกรม BIOS/Firmware จาก Flash ROM</li>
-          <li><span style="font-weight: bold;">ตรวจสอบอุปกรณ์ (POST):</span> ตรวจสอบความพร้อมเมนบอร์ด RAM ซีพียู อุปกรณ์ต่อพ่วง</li>
-          <li><span style="font-weight: bold;">โหลดระบบปฏิบัติการ:</span> อ่านจาก Flash ROM หรืออุปกรณ์อื่น (ฮาร์ดดิสก์, SSD) เก็บใน RAM</li>
-          <li><span style="font-weight: bold;">Kernel พร้อมใช้งาน:</span> เริ่มทำงาน โหลด Configuration แสดงหน้าจอพร้อมรับคำสั่ง</li>
+          <li>
+            <span style="font-weight: bold">เริ่มจ่ายไฟ:</span> กดปุ่มเปิด →
+            พาวเวอร์ซัพพลายจ่ายไฟให้ซีพียู
+          </li>
+          <li>
+            <span style="font-weight: bold">ซีพียูเริ่มทำงาน:</span> อ่านโปรแกรม
+            BIOS/Firmware จาก Flash ROM
+          </li>
+          <li>
+            <span style="font-weight: bold">ตรวจสอบอุปกรณ์ (POST):</span>
+            ตรวจสอบความพร้อมเมนบอร์ด RAM ซีพียู อุปกรณ์ต่อพ่วง
+          </li>
+          <li>
+            <span style="font-weight: bold">โหลดระบบปฏิบัติการ:</span> อ่านจาก
+            Flash ROM หรืออุปกรณ์อื่น (ฮาร์ดดิสก์, SSD) เก็บใน RAM
+          </li>
+          <li>
+            <span style="font-weight: bold">Kernel พร้อมใช้งาน:</span>
+            เริ่มทำงาน โหลด Configuration แสดงหน้าจอพร้อมรับคำสั่ง
+          </li>
         </ol>
+
+        <h3>ประเภทของการบู๊ตเครื่อง</h3>
+        <ul>
+          <li>
+            <span style="font-weight: bold;">วอร์มบู๊ต (Warm Boot):</span> ให้เริ่มทำงานใหม่ (รีสตาร์ท/Soft Reset)<br />
+            บางครั้งอาจเคลียร์ค่าไม่หมด สมาร์ตโฟนเมื่อปิดผ่านเมนูเป็น Soft Reset
+          </li><br>
+          <li>
+            <span style="font-weight: bold;">โคลด์บู๊ต (Cold Boot):</span> เริ่มต้นฮาร์ดแวร์ใหม่จริงๆ (Hard Reset)<br />
+            โปรแกรมและข้อมูลใน RAM หายไป ต้องโหลด OS ใหม่หมด ใช้เวลานานกว่า
+            แต่แน่ใจได้ว่าปัญหาจะหายไป
+          </li>
+        </ul>
+
+        <h2>การจัดการหน่วยประมวลผล (CPU Management)</h2>
+        <ul>
+          <li><span style="font-weight: bold;">Time Sharing:</span> แบ่งเวลาเป็นช่วงให้โปรแกรมต่างๆ ทีละอัน</li>
+          <li><span style="font-weight: bold;">Multi-core CPU:</span> มีหลาย core ทำงานหลายโปรแกรมพร้อมกันได้จริงๆ</li>
+          <li><span style="font-weight: bold;">Performance core + Efficiency core:</span> OS จัดสรรงานให้เหมาะสม หรือปิด core ที่ไม่ใช้</li>
+          <li><span style="font-weight: bold;">GPU (Graphics Processing Unit):</span> ช่วยงานกราฟิกและการคำนวณแบบคู่ขนาน</li>
+          <li><span style="font-weight: bold;">NPU (Neural Processing Unit):</span> ช่วยงาน AI เร็วกว่า GPU และประหยัดพลังงาน</li>
+        </ul>
+
+        <h2>การจัดการอุปกรณ์นำเข้าและแสดงผล (I/O Device Management)</h2>
+        <ul>
+          <li><span style="font-weight: bold;">บัฟเฟอร์ (Buffer):</span> พื้นที่พักข้อมูลชั่วคราว (ในหน่วยความจำหรือฮาร์ดดิสก์)</li>
+          <li><span style="font-weight: bold;">Spooling สำหรับการพิมพ์:</span> Print Queue เก็บงานพิมพ์และทยอยส่งไปเครื่องพิมพ์</li>
+          <li><span style="font-weight: bold;">Device Driver:</span> จำเป็นต้องติดตั้งเพื่อให้ OS สั่งงานอุปกรณ์ได้อย่างถูกต้อง</li>
+          <li><span style="font-weight: bold;">Plug and Play:</span> ติดตั้งอุปกรณ์ใหม่ OS ค้นหาและติดตั้งไดรเวอร์โดยอัตโนมัติ</li>
+        </ul>
       </main>
     </div>
 

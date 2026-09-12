@@ -102,7 +102,7 @@ main {
 main p {
   font-size: 13pt;
 }
-main ol {
+main ol, ul {
   font-size: 13pt;
 }
 main table {
