@@ -10,14 +10,12 @@
     <!-- nav -->
     <nav>
       <!-- head -->
-      <div class="head">
-        บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน
-      </div>
+      <div class="head">บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน</div>
       <!-- menu -->
       <div style="margin-left: auto">
         <a href="home.html">หน้าหลัก</a>
         <a href="content_1.html">ระบบปฏิบัติการ</a>
-        <a href="content_2.html">	การบู๊ตและ CPU</a>
+        <a href="content_2.html"> การบู๊ตและ CPU</a>
         <a href="content_3.html">หน่วยความจำ</a>
         <a href="content_4.html" class="active">การจัดการไฟล์</a>
         <a href="content_5.html">ความปลอดภัย</a>
@@ -35,9 +33,36 @@
 
       <!-- body -->
       <main>
-        <h2>● ระบบปฏิบัติการ (Operating System) คืออะไร</h2>
+        <h2>การจัดการไฟล์</h2>
+        <h3>ความหมายของไฟล์ (Files)</h3>
         <p>
-          
+          หน่วยเก็บข้อมูลในคอมพิวเตอร์ ใช้เก็บในสื่อบันทึก: ฮาร์ดดิสก์,
+          แฟลชไดรฟ์, CD, Flash ROM ของสมาร์ตโฟน
+        </p>
+
+        <h3>ชื่อไฟล์ (File Name) และส่วนขยาย (Extension)</h3>
+        <p>
+          ชื่อไฟล์: ตั้งยาวได้ ระวังช่องว่างและการเว้นวรรค ช่องว่างใน Windows
+          ใช้ได้ ไม่ error แต่แนะนำใช้ underscore (_) แทน กันสับสน ส่วนขยาย: 3-4
+          ตัวอักษร คั่นด้วยจุด (.) เช่น .html, .docx ช่วยให้ OS เข้าใจรูปแบบไฟล์
+          (บางครั้งซ่อนไม่ให้ผู้ใช้เห็น) ไฟล์จะซ้ำชื่อได้ถ้าต่างส่วนขยาย
+          แต่ไม่ได้ถ้าเหมือนทั้งชื่อและส่วนขยาย
+        </p>
+
+        <h3>ลำดับโครงสร้างไฟล์ (Hierarchical/Tree Structure)</h3>
+        <p>
+          โครงสร้างแบบต้นไม้: ราก (Root) แตกแขนงเป็นกิ่ง ไดเร็คทอรี (Directory)
+          หรือ โฟลเดอร์ (Folder): รวมไฟล์ที่เป็นเรื่องเดียวกัน ไดเร็คทอรีราก
+          (Root Directory): ระดับสูงสุด Unix/Linux: มี root เดียว Windows:
+          แยกตาม drive (C:, D:) ซับไดเร็คทอรี (Subdirectory):
+          โฟลเดอร์ย่อยซ้อนต่อๆ ได้
+        </p>
+
+        <h3>พาธ (Path)</h3>
+        <p>
+          เส้นทางตำแหน่งที่เก็บไฟล์ เริ่มจาก Root Directory ผ่าน subdirectory
+          ถึงไฟล์เป้าหมาย Windows ใช้ \ (backslash) คั่น MacOS, Android, iOS ใช้
+          / (slash) คั่น ตัวอย่าง: C:\Users\vasin\Provision Dropbox\Vasin Permsup\_2023\_Working\ITComAI_2024\Source-AI\Slides
         </p>
       </main>
     </div>

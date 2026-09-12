@@ -10,18 +10,16 @@
     <!-- nav -->
     <nav>
       <!-- head -->
-      <div class="head">
-        บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน
-      </div>
+      <div class="head">บทที่ 5 ระบบปฏิบัติการและหลักการทํางาน</div>
       <!-- menu -->
       <div style="margin-left: auto">
         <a href="home.html">หน้าหลัก</a>
         <a href="content_1.html">ระบบปฏิบัติการ</a>
-        <a href="content_2.html">	การบู๊ตและ CPU</a>
+        <a href="content_2.html"> การบู๊ตและ CPU</a>
         <a href="content_3.html">หน่วยความจำ</a>
         <a href="content_4.html">การจัดการไฟล์</a>
         <a href="content_5.html" class="active">ความปลอดภัย</a>
-        <a href="credit.html" >ผู้จัดทำ</a>
+        <a href="credit.html">ผู้จัดทำ</a>
       </div>
     </nav>
 
@@ -35,10 +33,79 @@
 
       <!-- body -->
       <main>
-        <h2>● ระบบปฏิบัติการ (Operating System) คืออะไร</h2>
+        <h2>การรักษาความปลอดภัยของระบบ</h2>
+        <ul>
+          <li>
+            <span style="font-weight: bold">Login:</span>
+            ยืนยันตัวตนเพื่อตรวจสอบสิทธิ์การใช้งาน
+          </li>
+          <li>
+            <span style="font-weight: bold">สิทธิ์ผู้ใช้:</span>
+            เข้าใช้โปรแกรมใด ดูข้อมูลใด ได้หรือไม่
+          </li>
+          <li>
+            <span style="font-weight: bold">Password:</span> วิธีดั้งเดิม
+            แต่ต้องจำ
+          </li>
+          <li>
+            <span style="font-weight: bold">Biometrics:</span> ลายนิ้วมือ
+            สแกนหน้า แม่นยำและไม่ต้องจำ<br /><span style="font-weight: bold"
+              >ข้อดี:</span
+            >
+            ปลอดภัยสูง <br /><span style="font-weight: bold">ข้อเสีย:</span>
+            ต้องเก็บข้อมูลชีวภาพให้ปลอดภัย
+          </li>
+          <li>
+            <span style="font-weight: bold">One-Time Password (OTP):</span>
+            รหัสใช้ได้ครั้งเดียว จำกัดเวลา (ผ่าน SMS)
+          </li>
+          <li>
+            <span style="font-weight: bold">Passkey:</span> ใหม่ ไม่ต้องจำ
+            password ป้องกัน Phishing/Pharming
+          </li>
+        </ul>
+
+        <h2>การตรวจสอบสถานะการทำงานของระบบ</h2>
+        <ul>
+          <li>
+            <span style="font-weight: bold">Windows:</span> Task Manager
+            ตรวจสอบประสิทธิภาพ (Performance)
+          </li>
+          <li>
+            <span style="font-weight: bold">Android:</span>
+            แอปตรวจสอบสถานะการทำงาน (ฝังใน OS)
+          </li>
+          <li>
+            <span style="font-weight: bold">ตรวจสอบ:</span> CPU usage, Memory
+            usage, Disk usage
+          </li>
+        </ul>
+
+        <h2>ส่วนติดต่อกับผู้ใช้ (User Interface)</h2>
+        <h3>Command Line</h3>
         <p>
-          
+          ป้อนคำสั่งข้อความ (Text) ทีละบรรทัด เหมาะสำหรับผู้ที่มีความชำนาญ<br />
+          ตัวอย่าง: DOS, Unix/Linux command prompt
         </p>
+
+        <h3>Graphical (GUI)</h3>
+        <p>
+          ใช้รูปภาพและสัญลักษณ์แทนข้อความ ผู้ใช้ไม่ต้องจดจำรูปแบบคำสั่ง
+          เลือกจากเมนูบนจอผ่านเมาส์หรือแตะจอ<br />
+          ตัวอย่าง: Windows, macOS, สมาร์ตโฟน นิยมใช้ในระบบปฏิบัติการสมัยใหม่
+        </p>
+
+        <h3>Kernel และ Shell</h3>
+        <ul>
+          <li>
+            <span style="font-weight: bold;">Kernel:</span> ส่วนหลักทำหน้าที่สำคัญ (จัดคิว จัดสรรหน่วยความจำ ฯลฯ)
+            ฝังตัวใน RAM ตลอดเวลา
+          </li>
+          <li>
+            <span style="font-weight: bold;">Shell:</span> เปลือกห่อหุ้ม Kernel รับคำสั่งจากผู้ใช้ส่งให้ Kernel <br />
+            <span style="font-weight: bold;">ตัวอย่าง:</span> DOS มี command.com Windows มี Shell แบบ GUI
+          </li>
+        </ul>
       </main>
     </div>
 
