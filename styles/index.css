@@ -107,6 +107,12 @@ main {
   box-sizing: border-box;
   /* flex: 1; */
 }
+main h2{
+  color: rgb(255, 63, 63);
+}
+main h3{
+  color: rgba(0, 183, 0, 0.812);
+}
 main p {
   font-size: 13pt;
 }
