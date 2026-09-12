@@ -11,6 +11,7 @@ html {
   margin: 0;
   padding: 0;
   background: #090C15;
+  caret-color: transparent;
 }
 
 body{
@@ -57,7 +58,7 @@ nav a.active{
 aside {
   background: #1e293b47;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   margin-top: 3rem;
   color: white;
   min-width: 200px;
@@ -93,15 +94,17 @@ main {
   color: rgba(255, 255, 255, 0.81);
   background: #1E293B;
   margin: 4.5rem 14.5rem;
-  padding-left: 1.5rem;
+  padding: 0.5rem 1.5rem;
   width: calc(100% - 15.5rem); /* 14.5rem x 2 ฝั่ง = 29rem */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  /* position: fixed; */
   flex: 1;
 }
 main p {
+  font-size: 13pt;
+}
+main ol{
   font-size: 13pt;
 }
 
@@ -112,4 +115,5 @@ footer {
   padding: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   color: white;
+  /* background: #161f357a; */
 }
