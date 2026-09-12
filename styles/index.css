@@ -13,6 +13,12 @@ html {
   background: #090C15;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* navbar */
 nav {
   display: flex;
@@ -86,13 +92,14 @@ aside li {
 main {
   color: rgba(255, 255, 255, 0.81);
   background: #1E293B;
-  position: fixed;
   margin: 4.5rem 14.5rem;
   padding-left: 1.5rem;
   width: calc(100% - 15.5rem); /* 14.5rem x 2 ฝั่ง = 29rem */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  /* position: fixed; */
+  flex: 1;
 }
 main p {
   font-size: 13pt;
@@ -100,6 +107,7 @@ main p {
 
 /* footer */
 footer {
+  margin-top: auto;
   text-align: center;
   padding: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
