@@ -1,0 +1,34 @@
+/* main about images */
+main img {
+    width: 100%;
+}
+
+main .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+main .images .image-card {
+    background: #1226584a;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main .images img {
+    object-fit: contain;
+    /* รูปไม่ยืด/บีบเบี้ยว อยู่ในกรอบพอดี */
+}
+
+main img {
+    width: 100%;
+}
