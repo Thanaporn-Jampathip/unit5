@@ -143,6 +143,16 @@ main th {
   font-size: 13pt;
 }
 
+/* main about images */
+main .images {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr; /* กำหนดคอลัมน์ */
+  gap: 1rem; 
+}
+main img {
+  width: 100%;
+}
+
 /* footer */
 footer {
   margin-top: auto;
@@ -155,5 +165,3 @@ footer {
   font-size: 10pt;
   border-radius: 10px;
 }
-
-
