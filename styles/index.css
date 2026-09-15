@@ -32,6 +32,7 @@ nav {
   box-sizing: border-box;
   /* border-bottom: 1px solid rgba(189, 189, 189, 0.263); */
 }
+
 nav a {
   text-decoration: none;
   /* border: 1px solid black; */
@@ -39,10 +40,12 @@ nav a {
   /* margin-left: 0.3rem; */
   color: rgb(155, 155, 155);
 }
+
 nav a:hover {
   transition: 0.3s ease;
   color: white;
 }
+
 nav a.active {
   color: #00f0ff;
 }
@@ -70,12 +73,14 @@ aside {
   /* border-right: 1px solid rgba(189, 189, 189, 0.263); */
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
+
 aside ul {
   /* list-style: none; */
   padding-left: 1.5rem;
   margin-top: 1rem;
   color: rgb(160, 160, 160);
 }
+
 aside li {
   margin-left: 0.5rem;
   margin-bottom: 1rem;
@@ -86,6 +91,7 @@ aside li {
 .menu {
   margin-top: 3.5rem;
 }
+
 .menu h3 {
   text-align: center;
   color: rgb(160, 160, 160);
@@ -101,21 +107,26 @@ main {
   margin-right: 17rem;
   margin-bottom: 1rem;
   padding: 0.5rem 1.5rem;
-  width: calc(100% - 18rem); /* 14.5rem x 2 ฝั่ง = 29rem */
+  width: calc(100% - 18rem);
+  /* 14.5rem x 2 ฝั่ง = 29rem */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   /* flex: 1; */
 }
+
 main h2 {
   color: rgb(255, 63, 63);
 }
+
 main h3 {
   color: rgba(0, 183, 0, 0.812);
 }
+
 main p {
   font-size: 13pt;
 }
+
 main ol,
 ul {
   font-size: 13pt;
@@ -129,28 +140,21 @@ main .table {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.364);
 }
+
 main table {
   width: 100%;
 }
+
 main table tr,
 th,
 td {
   padding: 1rem;
   text-align: center;
 }
+
 main th {
   border-bottom: 1px solid rgba(255, 255, 255, 0.364);
   font-size: 13pt;
-}
-
-/* main about images */
-main .images {
-  display: grid;
-  grid-template-columns: 200px 1fr 1fr; /* กำหนดคอลัมน์ */
-  gap: 1rem; 
-}
-main img {
-  width: 100%;
 }
 
 /* footer */

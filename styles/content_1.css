@@ -1,0 +1,116 @@
+/* main about images */
+main img {
+    width: 100%;
+}
+
+main .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+main .images .image-card {
+    background: #1226584a;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .images img {
+    object-fit: contain;
+    /* รูปไม่ยืด/บีบเบี้ยว อยู่ในกรอบพอดี */
+}
+
+main img {
+    width: 100%;
+}
+
+/* ----------------------------------------------- */
+/* main about images2 */
+main .images2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+main .images2 .image-card2 {
+    background: #1226584a;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .images2 img {
+    object-fit: contain;
+    /* รูปไม่ยืด/บีบเบี้ยว อยู่ในกรอบพอดี */
+}
+
+/* ----------------------------------------------- */
+/* main about images3 */
+main .images3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+main .images3 .image-card3 {
+    background: #1226584a;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    max-height: 300px;
+}
+
+main .images3 img {
+    object-fit: contain;
+    /* รูปไม่ยืด/บีบเบี้ยว อยู่ในกรอบพอดี */
+}
+
+/* ----------------------------------------------- */
+/* main about images4 */
+main .images4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+main .images4 .image-card4 {
+    background: #1226584a;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .images4 img {
+    object-fit: contain;
+    /* รูปไม่ยืด/บีบเบี้ยว อยู่ในกรอบพอดี */
+}
