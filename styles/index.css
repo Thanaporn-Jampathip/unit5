@@ -157,6 +157,12 @@ main th {
   font-size: 13pt;
 }
 
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* footer */
 footer {
   margin-top: auto;
